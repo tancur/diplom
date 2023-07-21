@@ -1,0 +1,37 @@
+.header {
+  display: flex;
+  position: sticky;
+  top: 0;
+
+  flex-wrap: nowrap;
+  /* background-color: rgb(251, 251, 252); */
+  background-image: linear-gradient(to top, #fbf48f, #f0f0e6);
+
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  font-family: "Marck Script";
+  font-weight: 600;
+  font-size: x-large;
+}
+.span {
+  margin-bottom: 60px;
+}
+.button {
+  /* border-radius: 15px; */
+  /* box-shadow: 2px 2px 5px rgba(0, 0, 0, 15); */
+  border: none;
+  cursor: pointer;
+  font-family: "Marck Script";
+  font-weight: 600;
+  font-size: x-large;
+  color: rgb(4, 4, 27);
+  background-image: linear-gradient(to top, #fbf48f, #f0f0e6);
+}
+.cartIcon {
+  display: flex;
+  flex-direction: row;
+}
+.cartIcon p {
+  margin: 0;
+}

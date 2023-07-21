@@ -1,0 +1,16 @@
+.input{
+  display: none;
+}
+.label{
+  display: flex;
+  
+  justify-content: center;
+  align-items: center;
+  background-image: radial-gradient(circle, #fefeed, #f8f8f4);
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 15);
+  border: 2px solid rgb(247, 247, 249);
+  border-radius: 15px;
+  padding:20px;
+  cursor: pointer;
+
+}

@@ -1,0 +1,78 @@
+.cardsContainer {
+  display: flex;
+  /* flex-direction: column; */
+  flex-wrap: wrap;
+  justify-content: space-around;
+  /* margin: 50px 160px; */
+  margin: 0 auto;
+  padding-bottom: 10px;
+  /* gap: 15px; */
+  /* font-family: "Ubuntu"; */
+}
+.cardsItem {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 50vw;
+  background-image: radial-gradient(circle, #fefeed, #f8f8f4);
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 15);
+  border: 2px solid rgb(247, 247, 249);
+  border-radius: 15px;
+  margin-top: 10px;
+}
+.button {
+  background-image: linear-gradient(to right, #fbf48f, #f0f0e6);
+  /* background-color: rgb(213, 200, 224); */
+  color: rgb(4, 4, 27);
+  border: none;
+  text-align: center;
+  height: 50px;
+  width: 180px;
+  font-size: 15px;
+  font-weight: bold;
+  padding: 5px;
+  border-radius: 10px;
+  margin: 20px;
+  cursor: pointer;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 15);
+}
+.imgCard {
+  height: 200px;
+  max-width: 200px;
+  border-radius: 15%;
+}
+
+.buttonDiv {
+  display: flex;
+  /* flex-direction: column; */
+  align-items: center;
+  
+ 
+}
+
+.inside input {
+  width: 50px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 15);
+  border: 2px solid rgb(247, 247, 249);
+  border-radius: 10px;
+  padding: 5px;
+  border: none;
+}
+.homeIcon{
+  width: 70px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 15);
+  border-radius: 10px;
+  background-image: linear-gradient(to right, #fbf48f, #f0f0e6);
+}
+.epty{
+  font-weight: bold;
+  border-radius: 5%;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 15);
+  margin-left: 
+  30vw;
+  width: 20vw;
+  margin-top: 20vw;
+  padding: 10px;
+  background-image: radial-gradient(circle, #fefeed, #f8f8f4);
+}

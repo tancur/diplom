@@ -1,0 +1,86 @@
+#popup {
+  display: none;
+  padding: 30px;
+  flex-direction: column;
+  /* position : fixed; */
+  /* padding-bottom: 15px; */
+
+  justify-content: space-between;
+  align-items: center;
+
+  border: 2px solid rgb(220, 208, 228);
+  border-radius: 15px;
+}
+
+.cardsItem {
+  margin: 50px 160px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 15);
+
+  background-image: linear-gradient(to bottom, #fbf48f, #f0f0e6);
+  border: 2px solid rgb(247, 247, 249);
+  border-radius: 15px;
+  /* width: 100vw; */
+  /* width: calc(100% / 3 - 40px); */
+  /* min-width: 150px; */
+}
+
+.inside {
+  padding-top: 10px;
+}
+
+.inside h2 {
+}
+
+.inside p {
+  padding: 20px;
+  font-size: x-large;
+  text-align: center;
+}
+.button {
+  background-image: linear-gradient(to right, #fbf48f, #f0f0e6);
+  /* background-color: rgb(213, 200, 224); */
+  color: rgb(4, 4, 27);
+  border: none;
+  text-align: center;
+  height: 50px;
+  /* width: 180px; */
+  font-size: 15px;
+  font-weight: bold;
+  padding: 5px;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 15);
+  font-family: "Marck Script";
+  font-size: larger;
+  cursor: pointer;
+}
+.imgCard {
+  height: 200px;
+  max-width: 200px;
+  border-radius: 15%;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 15);
+  overflow: hidden;
+}
+
+/* .slider {
+  max-width: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} */
+
+.slider {
+  width: 200px;
+  margin: 0 auto;
+}
+
+.slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

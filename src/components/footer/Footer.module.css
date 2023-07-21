@@ -1,0 +1,7 @@
+.footer {
+  /* background-color: chartreuse; */
+  background-image: linear-gradient(to top, #fbf48f, #f0f0e6);
+  height: 5vh;
+  padding-top: 10px;
+  vertical-align: middle;
+}

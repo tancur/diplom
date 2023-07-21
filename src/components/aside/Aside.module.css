@@ -1,0 +1,24 @@
+.aside {
+  padding: 40px 0;
+  /* font-family: "Bebas Neue"; */
+  /* width: 210px; */
+  /* padding-top: 10px; */
+  font-weight: bold;
+  font-size: large;
+  flex-shrink: 0;
+  /* background-color: rgb(251, 251, 252); */
+  background-image: linear-gradient(to right, #fbf48f, #f0f0e6);
+  /* z-index: 2; */
+  order: -1;
+
+  /* display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px; */
+}
+.aside a {
+  display: block;
+  padding: 10px;
+  text-align: left;
+  text-decoration: none;
+}

@@ -1,0 +1,73 @@
+section {
+  background-image: radial-gradient(circle, #fefeed, #f8f8f4);
+  /* position: absolute;
+  min-height: 100vh; */
+  /* display: flex;  */
+}
+.ourWorks {
+  margin: 50px auto;
+  font-weight: bold;
+  line-height: 100px;
+  border-radius: 25px;
+  /* padding: 10px; */
+  width: 200px;
+  background-image: radial-gradient(circle, #fefeed, #f8f8f4);
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 15);
+}
+.cardsContainer {
+  display: flex;
+
+  flex-wrap: wrap;
+  justify-content: space-around;
+
+  margin: 0 auto;
+  padding-bottom: 10px;
+  gap: 15px;
+  /* font-family: "Ubuntu"; */
+}
+
+.cardsItem {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
+  background-image: radial-gradient(circle, #fefeed, #f8f8f4);
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 15);
+  border: 2px solid rgb(247, 247, 249);
+  border-radius: 15px;
+  width: calc(100% / 3 - 40px);
+  min-width: 150px;
+}
+
+.cardsItem p {
+  color: rgb(85, 40, 8);
+}
+
+.inside {
+  padding-top: 10px;
+}
+.button {
+  background-image: linear-gradient(to right, #fbf48f, #f0f0e6);
+  /* background-color: rgb(213, 200, 224); */
+  color: rgb(4, 4, 27);
+  font-family: "Marck Script";
+  border: none;
+  text-align: center;
+  height: 50px;
+  width: 180px;
+  font-weight: 600;
+  font-size: larger;
+
+  padding: 5px;
+  border-radius: 10px;
+  margin: 20px;
+}
+.imgCard {
+  height: 200px;
+  max-width: 200px;
+  border-radius: 15%;
+}
+.link {
+  text-decoration: none;
+}

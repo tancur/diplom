@@ -1,0 +1,40 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  width: 400px;
+  height: 300px;
+  margin: auto;
+
+  /* background-image: linear-gradient(to top, #fbf48f, #f0f0e6);
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 15);
+  border-radius: 15px; */
+}
+
+.form input {
+  padding: 10px;
+  margin: 10px;
+  border-radius: 15px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 15);
+  border: none;
+  width: 200px;
+  font-family: "Marck Script";
+  font-size: larger;
+  font-weight: bold;
+
+  /* width: 30%; */
+}
+.form button {
+  margin: 50px;
+  padding: 10px;
+  /* width: 100px; */
+  border-radius: 15px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 15);
+  border: none;
+  cursor: pointer;
+  font-family: "Marck Script";
+  font-size: larger;
+  font-weight: bold;
+  color: rgb(4, 4, 27);
+}

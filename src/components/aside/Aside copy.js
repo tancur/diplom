@@ -2,18 +2,16 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 import styles from "./Aside.module.css";
 import CategoryPage from "../categoryPage/CategoryPage";
-import { gqlRootCats, gqlCategoryDelete,gqlCategoryEdit } from "../../sql/request";
+import { gqlRootCats } from "../../sql/request";
 import { useDispatch, useSelector } from "react-redux";
 import { useEffect, useState } from "react";
 import { actionPromise } from "../../store/promiseReduser";
 import { NotFoundPage } from "../notFoundPage/NotFoundPage";
 import Skeleton from "react-loading-skeleton";
 import { CircularProgress } from "@mui/material";
-import { Button } from "./DeleteButton";
-import { Input } from "../admin/Input";
 
 export function Aside() {
-  const [isAdmin, setIsAdmin] = useState(false);
+  const[isAdmin,setIsAdmin]=useState(false)
   const dispatch = useDispatch();
   const rootCategories = useSelector((state) => state.query.getCategories);
   // console.log(rootCategories);
@@ -26,12 +24,9 @@ export function Aside() {
     if (
       state.payload?.sub?.acl &&
       Object.values(state.payload.sub.acl).includes("admin")
-    ) {
-      setIsAdmin(true);
+    ) {setIsAdmin(true);
       console.log(isAdmin);
       console.log("admin");
-    } else {
-      setIsAdmin(false);
     }
   }, [state.payload]);
 
@@ -61,51 +56,9 @@ export function Aside() {
             payload.CategoryFind &&
             payload.CategoryFind.length &&
             payload.CategoryFind.map((item) => (
-              <>
-                {" "}
-                {!isAdmin ? (
-                  <NavLink key={item._id} to={`/category/${item._id}`}>
-                    {item.name}
-                  </NavLink>
-                ) : (
-                  <>
-                   <div>
-                    <Input key={item._id} inputText={item.name} item = {item._id}/>
-                    
-
-                   {/* <Button
-                      item={item._id}
-                      text={"rename"}
-                      onClick={() =>
-                        dispatch(
-                        actionPromise(
-                          "editCategories",
-                          gqlCategoryEdit(item)
-                        )
-                        )
-                      }
-                  /> */}
-                   
-                   </div>
-                     
-                    
-
-                    <Button
-                      item={item._id}
-                      text={"X"}
-                      onClick={() =>
-                        dispatch(
-                          actionPromise(
-                            "delCategories",
-                            gqlCategoryDelete(item)
-                          )
-                        )
-                      }
-                    />
-                    <Button text={"+"} />
-                  </>
-                )}
-              </>
+              <NavLink key={item._id} to={`/category/${item._id}`}>
+                {item.name}
+              </NavLink>
             ))}
         </aside>
       )}

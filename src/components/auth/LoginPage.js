@@ -9,7 +9,9 @@ export function LoginPage() {
   const state = useSelector((state) => state.auth);
   const { payload, token } = state;
   console.log(token);
+  console.log(payload);
   useEffect(() => {
+    // if (payload?.sub?.acl&&Object.values(payload.sub.acl).includes('admin')){console.log('admin')}
     if (token) {
       navigate("/");
     }

@@ -74,6 +74,7 @@ export function FileUploader() {
     formData.append("photo", files[0]);
     dispatch(actionPromise("file", uploadPost(formData)));
     setIsLoading(false);
+    console.log(files)
   };
 
   return (

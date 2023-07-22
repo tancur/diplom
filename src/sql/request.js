@@ -54,6 +54,37 @@ export const gqlCatsWithImgsDescription = (id) => {
   });
 };
 
+// запрос на удаление категории!!!!!!!!!!!!
+
+export const gqlCategoryDelete = (categoryDel) => {
+  const categoryDelete = `mutation categoryDelete ($categoryDel: CategoryInput){
+    CategoryDelete(category: $categoryDel)
+   {_id
+      
+      name
+    }
+  }`;
+  return gql(categoryDelete, { categoryDel: categoryDel });
+};
+
+// запрос на изменение названия категории
+export const gqlCategoryEdit = (categoryCorrect) => {
+  const categoryEdit = `mutation categoryEdit ($categoryCorrect: CategoryInput){
+    CategoryUpsert(category: $categoryCorrect)
+   {
+    _id
+      name
+    }
+  }`;
+  return gql(categoryEdit, { categoryCorrect: categoryCorrect });
+
+  // в песочнице так работает "categoryCorrect": {
+  //   "_id": "64b7fe1b6ad1742358aefe3a",
+  //  "name": "Snow1"    
+//  }
+
+};
+
 // АВТОРИЗАЦИЯ
 
 // Запит на реєстрацію
@@ -79,4 +110,3 @@ export const gqlLogin = (login, password) => {
 
   return gql(loginQuery, { login: login, password: password });
 };
-

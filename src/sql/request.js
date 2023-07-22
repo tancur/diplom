@@ -68,7 +68,7 @@ export const gqlCategoryDelete = (categoryDel) => {
 };
 
 // запрос на изменение названия категории
-export const gqlCategoryEdit = (categoryCorrect) => {
+export const gqlCategoryEdit = ({categoryCorrect}) => {
   const categoryEdit = `mutation categoryEdit ($categoryCorrect: CategoryInput){
     CategoryUpsert(category: $categoryCorrect)
    {
@@ -76,7 +76,7 @@ export const gqlCategoryEdit = (categoryCorrect) => {
       name
     }
   }`;
-  return gql(categoryEdit, { categoryCorrect: categoryCorrect });
+  return gql(categoryEdit, { categoryCorrect: {categoryCorrect} });
 
   // в песочнице так работает "categoryCorrect": {
   //   "_id": "64b7fe1b6ad1742358aefe3a",
